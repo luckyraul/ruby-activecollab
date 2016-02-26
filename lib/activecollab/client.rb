@@ -13,8 +13,8 @@ module Activecollab
 
         def get(path)
             response = self.class.get(prepareUrl(path), @options)
-            ap 'GET RESPONSE FROM AC:'
-            ap response
+            #ap 'GET RESPONSE FROM AC:'
+            #ap response
             response
         end
 

@@ -4,7 +4,7 @@ module Activecollab
         attr_accessor :base_url, :login
         format :json
 
-        def initialize(company, application, url, login, password)
+        def initialize(company = Activecollab.company, application = Activecollab.application, url = Activecollab.base_url, login = Activecollab.login, password = Activecollab.password)
             @base_url = url
             @options = {
                 base_uri: url,
